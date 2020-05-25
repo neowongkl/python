@@ -1,4 +1,6 @@
 # python3 
+# work on linux machine
+# change html tag name by id
 from bs4 import BeautifulSoup
 from pathlib import Path
 import html
@@ -7,7 +9,7 @@ tcount = 0
 fcount = 0
 tagPath = []
 # loop through all html file inside directory
-for path in Path('/mnt/c/Users/neow/Desktop/regex').rglob('*.html'):
+for path in Path('/mnt/c/test').rglob('*.html'):
 	htmlr = open(path, 'r').read()
 	soup = BeautifulSoup(htmlr, "html.parser")
 	# target tag
